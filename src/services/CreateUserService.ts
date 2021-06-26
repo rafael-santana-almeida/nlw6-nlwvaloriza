@@ -7,11 +7,17 @@ import { UsersRepository } from "../repositories/UsersRepository";
 interface IUserRequest {
   name: string;
   email: string;
+  password: string;
   isAdmin?: boolean;
 }
 
 class CreateUserService {
-  async execute({ name, email, isAdmin }: IUserRequest): Promise<User> {
+  async execute({
+    name,
+    email,
+    password,
+    isAdmin = false,
+  }: IUserRequest): Promise<User> {
     const usersRepository = getCustomRepository(UsersRepository);
 
     if (!email) {
@@ -27,6 +33,7 @@ class CreateUserService {
     const user = usersRepository.create({
       name,
       email,
+      password,
       isAdmin,
     });
 
