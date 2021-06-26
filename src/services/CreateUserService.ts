@@ -1,6 +1,6 @@
+import { classToPlain } from "class-transformer";
 import { getCustomRepository } from "typeorm";
 
-import { User } from "../entities/User";
 import { AppError } from "../errors/AppError";
 import { UsersRepository } from "../repositories/UsersRepository";
 
@@ -17,7 +17,7 @@ class CreateUserService {
     email,
     password,
     isAdmin = false,
-  }: IUserRequest): Promise<User> {
+  }: IUserRequest): Promise<Record<string, any>> {
     const usersRepository = getCustomRepository(UsersRepository);
 
     if (!email) {
@@ -39,7 +39,7 @@ class CreateUserService {
 
     await usersRepository.save(user);
 
-    return user;
+    return classToPlain(user);
   }
 }
 

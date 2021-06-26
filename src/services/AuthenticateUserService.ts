@@ -26,14 +26,10 @@ class AuthenticateUserService {
       throw new AppError("Email/password incorrect");
     }
 
-    const token = sign(
-      { email: user.email },
-      "f32bfa8de334a87442f252da41edc1c2",
-      {
-        subject: user.id,
-        expiresIn: "15m",
-      }
-    );
+    const token = sign({ email: user.email }, process.env.SECRET_KEY_TOKEN, {
+      subject: user.id,
+      expiresIn: "15m",
+    });
 
     return token;
   }
