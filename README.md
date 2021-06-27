@@ -1,4 +1,4 @@
-# <img src="https://nextlevelweek.com/favicon.ico" align="left" height="48" width="48" > Next Level Week#6 - Together | Rocketseat | NLW Valoriza
+# <img src="https://nextlevelweek.com/favicon.ico" align="left" height="48" width="48" > Next Level Week#6 | Rocketseat | NLW Valoriza
 
 ## :memo: Resumo
 A aplicação consiste em uma API para elogiar os usuários através de Tags, perfeito para implementar no ambiente de trabalho.
