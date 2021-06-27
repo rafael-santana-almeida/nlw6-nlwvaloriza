@@ -43,5 +43,5 @@ baseURL: ```http://localhost:3333/```
 * POST: ```/compliments```: Cria um elogio para um usuário da aplicação. Precisa estar logado.
 * POST: ```/tags```: Cria uma nova Tag. Precisa estar logado e ser Admin. 
 * GET: ```/tags```: Lista todas as Tags disponíveis. Precisa estar logado.
-* GET: ```/users/compliments/send```: Lista todos os elogios que o usuário logado realizou.
-* GET: ```/users/compliments/receive```: Lista todos os elogios recebidos pelo o usuário logado.
+* GET: ```/compliments/user/send```: Lista todos os elogios que o usuário logado realizou.
+* GET: ```/compliments/user/receive```: Lista todos os elogios recebidos pelo o usuário logado.
