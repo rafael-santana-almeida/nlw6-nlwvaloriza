@@ -16,6 +16,7 @@ A aplicação consiste em uma API para elogiar os usuários através de Tags, pe
 * :white_check_mark: uuid
 * :white_check_mark: bcrypt
 * :white_check_mark: jsonwebtoken
+* :white_check_mark: tsyringe
 * :white_check_mark: class-transformer
 
 ## :rocket: Como executar
