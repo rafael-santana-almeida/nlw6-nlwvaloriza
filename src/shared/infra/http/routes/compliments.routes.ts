@@ -1,8 +1,8 @@
 import { Router } from "express";
 
-import { CreateComplimentController } from "@modules/compliments/useCases/createComplimentsUseCase/CreateComplimentController";
-import { ListReceiveComplimentsController } from "@modules/compliments/useCases/listReceiveComplimentsUseCase/ListReceiveComplimentsController";
-import { ListSendComplimentsController } from "@modules/compliments/useCases/listSendComplimentsUseCase/ListSendComplimentsController";
+import { CreateComplimentController } from "@modules/compliments/useCases/createCompliments/CreateComplimentController";
+import { ListReceiveComplimentsController } from "@modules/compliments/useCases/listReceiveCompliments/ListReceiveComplimentsController";
+import { ListSendComplimentsController } from "@modules/compliments/useCases/listSendCompliments/ListSendComplimentsController";
 
 import { ensureAuthenticated } from "../middlewares/ensureAuthenticated";
 

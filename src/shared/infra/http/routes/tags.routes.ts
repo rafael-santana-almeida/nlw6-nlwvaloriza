@@ -1,7 +1,7 @@
 import { Router } from "express";
 
-import { CreateTagController } from "@modules/tags/useCases/createTagUseCase/CreateTagController";
-import { ListTagsController } from "@modules/tags/useCases/listTagsUseCase/ListTagsController";
+import { CreateTagController } from "@modules/tags/useCases/createTag/CreateTagController";
+import { ListTagsController } from "@modules/tags/useCases/listTags/ListTagsController";
 
 import { ensureAdmin } from "../middlewares/ensureAdmin";
 import { ensureAuthenticated } from "../middlewares/ensureAuthenticated";

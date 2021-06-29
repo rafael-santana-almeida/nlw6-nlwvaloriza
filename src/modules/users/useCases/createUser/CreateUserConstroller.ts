@@ -2,7 +2,7 @@ import { hash } from "bcryptjs";
 import { Request, Response } from "express";
 import { container } from "tsyringe";
 
-import { CreateUserUseCase } from "@modules/users/useCases/createUserUseCase/CreateUserUseCase";
+import { CreateUserUseCase } from "./CreateUserUseCase";
 
 class CreateUserController {
   async handle(request: Request, response: Response): Promise<Response> {
