@@ -31,7 +31,7 @@ cd nlw6-nlwvaloriza
 # Instale as dependências
 yarn
 
-# Inicialize o proejto
+# Inicialize o projeto
 yarn dev
 ```
 
